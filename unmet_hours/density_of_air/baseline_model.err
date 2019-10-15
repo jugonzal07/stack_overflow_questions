@@ -1,0 +1,717 @@
+Program Version,EnergyPlus, Version 8.9.0-40101eaafd, YMD=2019.10.14 17:10,
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS OFF DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON CONTINUOUS", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** CheckUsedConstructions: There are 3 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=INT-FLOOR-TOPSIDE
+   ************* Construction=INT-FLOOR-UNDERSIDE
+   ************* Construction=CONSTRUCTION FFACTOR GROUND FLOOR 1
+   ************* Beginning System Sizing Calculations
+   ************* Beginning Plant Sizing Calculations
+   ** Warning ** GetDXCoils: Coil:Heating:DX:MultiSpeed="COIL HEATING DX MULTI SPEED 5" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = DEFROSTCURVE output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.813
+   ** Warning ** GetDXCoils: Coil:Heating:DX:MultiSpeed="COIL HEATING DX MULTI SPEED 3" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = DEFROSTCURVE output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.813
+   ** Warning ** GetDXCoils: Coil:Heating:DX:MultiSpeed="COIL HEATING DX MULTI SPEED 2" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = DEFROSTCURVE output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.813
+   ** Warning ** GetDXCoils: Coil:Heating:DX:MultiSpeed="COIL HEATING DX MULTI SPEED 4" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = DEFROSTCURVE output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.813
+   ** Warning ** GetDXCoils: Coil:Heating:DX:MultiSpeed="COIL HEATING DX MULTI SPEED 1" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = DEFROSTCURVE output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.813
+   ** Warning ** SizeDXCoil: Coil:Cooling:DX:MultiSpeed COIL COOLING DX MULTI SPEED 5
+   **   ~~~   ** ...Rated Total Cooling Capacity will be limited by the minimum rated volume flow per rated total capacity ratio.
+   **   ~~~   ** ...DX coil speed = 2
+   **   ~~~   ** ...DX coil volume flow rate (m3/s) = 0.000000
+   **   ~~~   ** ...Requested capacity (W) = 650226.913
+   **   ~~~   ** ...Requested flow/capacity ratio (m3/s/W) = 3.773E-005
+   **   ~~~   ** ...Minimum flow/capacity ratio (m3/s/W) = 4.027E-005
+   **   ~~~   ** ...Adjusted capacity (W) = 609311.415
+   ** Warning ** SizeDXCoil: Coil:Cooling:DX:MultiSpeed COIL COOLING DX MULTI SPEED 2
+   **   ~~~   ** ...Rated Total Cooling Capacity will be limited by the minimum rated volume flow per rated total capacity ratio.
+   **   ~~~   ** ...DX coil speed = 2
+   **   ~~~   ** ...DX coil volume flow rate (m3/s) = 0.000000
+   **   ~~~   ** ...Requested capacity (W) = 38407.756
+   **   ~~~   ** ...Requested flow/capacity ratio (m3/s/W) = 4.004E-005
+   **   ~~~   ** ...Minimum flow/capacity ratio (m3/s/W) = 4.027E-005
+   **   ~~~   ** ...Adjusted capacity (W) = 38188.438
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..Variables not valid for this simulation will have "[Invalid/Undefined]" in the Units Column of the Table Report.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_CORE:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_CORE:FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_CORE:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_EAST PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_EAST PERIMETER:FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_EAST PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER:FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER:FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_WEST PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN ELECTRIC POWER not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_WEST PERIMETER:FAN ELECTRIC POWER not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: FanReportMonthly
+   **   ~~~   ** ..Variable name=FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FAN FOR BLOCKS-1217_EDUCATION_1_WEST PERIMETER:FAN RISE IN AIR TEMPERATURE not valid for this simulation.
+   ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER 1"
+   **   ~~~   ** Average air volume flow rate is <50% or >130% of the nominal HX supply air volume flow rate.
+   **   ~~~   ** Air volume flow rate ratio = 3.322. Environment=RUN PERIOD 1, at Simulation time=01/01 01:15 - 01:30
+   ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER 1"
+   **   ~~~   ** Average air volume flow rate is <50% or >130% of the nominal HX supply air volume flow rate.
+   **   ~~~   ** Air volume flow rate ratio = 2.765. Environment=RUN PERIOD 1, at Simulation time=01/01 01:15 - 01:30
+   ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_WEST PERIMETER 1"
+   **   ~~~   ** Average air volume flow rate is <50% or >130% of the nominal HX supply air volume flow rate.
+   **   ~~~   ** Air volume flow rate ratio = 3.942. Environment=RUN PERIOD 1, at Simulation time=01/01 01:15 - 01:30
+   ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER 1"
+   **   ~~~   ** Average air volume flow rate is <50% or >130% of the nominal HX supply air volume flow rate.
+   **   ~~~   ** Air volume flow rate ratio = 2.581. Environment=RUN PERIOD 1, at Simulation time=01/03 22:35 - 22:40
+   ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE 1"
+   **   ~~~   ** Average air volume flow rate is <50% or >130% of the nominal HX supply air volume flow rate.
+   **   ~~~   ** Air volume flow rate ratio = 2.126. Environment=RUN PERIOD 1, at Simulation time=01/07 06:18 - 06:20
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 13:10 - 13:15
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 25.343240,26.745621,28.223772,29.785656,31.431701,0.000000,33.171243,35.004238,36.941661,38.982821,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 25.343240,-26.745621,28.223772,-29.785656,38.282032,31.431701,-33.171243,35.004238,-36.941661,38.982821,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.185494,0.185494,0.185494,0.185494,0.185494,0.000000,0.185494,0.185494,0.185494,0.185494,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.185494,0.185494,0.185494,0.185494,0.185494,0.185494,0.185494,0.185494,0.185494,0.185494,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for humidity ratio
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface humidity ratio check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 humidity ratio check value iteration history trace: 1.152104E-004,1.152104E-004,1.152104E-004,1.152104E-004,0.000000,1.152104E-004,1.152104E-004,1.152104E-004,1.152104E-004,1.152104E-004,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.809235,0.809235,0.809235,0.809235,0.000000,0.809235,0.809235,0.809235,0.809235,0.809235,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 3886.826214,3886.826214,3886.826214,3886.826214,3886.826214,0.000000,3886.826214,3886.826214,3886.826214,3886.826214,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -3886.906493,3886.906493,-3886.906493,3886.906493,-4838.864091,-3886.906493,3886.906493,-3886.906493,3886.906493,-3886.906493,
+   **   ~~~   ** Node named NODE 52 shows oscillating humidity ratio across iterations with a repeated value of 1.355261E-003
+   **   ~~~   ** Node named NODE 52 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.355261E-003,1.240051E-003,1.355261E-003,1.240051E-003,1.355261E-003,1.240051E-003,1.355261E-003,1.240051E-003,1.355261E-003,1.240051E-003,
+   **   ~~~   ** Node named NODE 52 shows oscillating mass flow rate across iterations with a repeated value of 0.985202
+   **   ~~~   ** Node named NODE 52 mass flow rate [kg/s] iteration history trace (most recent first): 0.985202,1.170696,0.985202,1.170696,0.985202,1.170696,0.985202,1.170696,0.985202,1.170696,
+   **   ~~~   ** Node named NODE 52 shows oscillating temperatures across iterations with a repeated value of 25.960608
+   **   ~~~   ** Node named NODE 52 temperature [C] iteration history trace (most recent first): 25.960608,25.151372,25.960608,25.151372,25.960608,25.151372,25.960608,25.151372,25.960608,25.151372,
+   **   ~~~   ** Node named NODE 19 shows oscillating mass flow rate across iterations with a repeated value of 2.218686
+   **   ~~~   ** Node named NODE 19 mass flow rate [kg/s] iteration history trace (most recent first): 2.218686,2.218686,2.218686,2.218667,2.218640,2.218799,2.218602,2.218685,2.218685,2.218685,
+   **   ~~~   ** Node named NODE 19 shows oscillating temperatures across iterations with a repeated value of 26.028071
+   **   ~~~   ** Node named NODE 19 temperature [C] iteration history trace (most recent first): 26.028071,26.028071,26.028071,26.028037,26.028186,26.028004,26.028270,26.028070,26.028070,26.028070,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:15 - 14:30
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 2.633888E-002,2.645384E-002,2.657259E-002,2.668856E-002,2.680837E-002,0.000000,2.692536E-002,2.704625E-002,2.716426E-002,5.769579E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 2.633888E-002,2.645384E-002,2.657259E-002,2.668856E-002,2.680837E-002,2.680837E-002,2.692536E-002,2.704625E-002,2.716426E-002,5.769579E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,3.552714E-015,3.552714E-015,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 6.560916E-002,6.589956E-002,6.619125E-002,6.648423E-002,0.000000,6.677851E-002,6.707408E-002,6.737097E-002,0.140837,0.143641,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 561.436037,563.886598,566.417781,568.889779,571.443739,0.000000,573.937360,576.514303,579.029734,1229.835921,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -561.436037,563.886598,-566.417781,568.889779,-699.426892,-571.443739,573.937360,-576.514303,440.790456,-1229.835921,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:15 - 14:23
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.125627,0.126425,0.127343,0.128151,0.129083,0.000000,0.129902,0.130847,0.131676,0.132635,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.125627,0.126425,0.127343,0.128151,0.129083,0.129083,0.129902,0.130847,0.131676,0.132635,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.312541,0.314663,0.316800,0.318952,0.000000,0.321118,0.323299,0.325495,0.327705,0.329931,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 2677.838130,2694.851876,2714.425261,2731.655790,2751.514672,0.000000,2768.964545,2789.113355,2806.785157,2827.228406,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -2677.838130,2694.851876,-2714.425261,2731.655790,-3384.907475,-2751.514672,2768.964545,-2789.113355,2806.785157,-2827.228406,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:23 - 14:30
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 1.968506E-002,1.984153E-002,2.000260E-002,2.016157E-002,2.032527E-002,0.000000,2.048678E-002,2.065314E-002,2.081723E-002,4.422013E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 1.968506E-002,1.984153E-002,2.000260E-002,2.016157E-002,2.032527E-002,2.032527E-002,2.048678E-002,2.065314E-002,2.081723E-002,4.422013E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 4.903912E-002,4.943303E-002,4.983011E-002,5.023037E-002,0.000000,5.063385E-002,5.104056E-002,5.145055E-002,0.107966,0.110119,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 419.550750,422.885725,426.318598,429.706798,433.195637,0.000000,436.637902,440.183628,443.680812,942.470544,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -419.550750,422.885725,-426.318598,429.706798,-530.234176,-433.195637,436.637902,-440.183628,337.327296,-942.470544,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:30 - 14:45
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.233715,0.233715,0.233715,0.233715,0.233715,0.000000,0.233715,0.233715,0.233715,0.233715,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.233715,0.233715,0.233715,0.233715,0.233715,0.233715,0.233715,0.233715,0.233715,0.233715,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.576450,0.576450,0.576450,0.576450,0.000000,0.576450,0.576450,0.576450,0.576450,0.576450,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 4981.119522,4981.119522,4981.119522,4981.119522,4981.119522,0.000000,4981.119522,4981.119522,4981.119522,4981.119522,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -4981.126764,4981.126764,-4981.126764,4981.126764,-6142.261253,-4981.126764,4981.126764,-4981.126764,4981.126764,-4981.126764,
+   **   ~~~   ** Node named NODE 41 shows oscillating humidity ratio across iterations with a repeated value of 1.498234E-003
+   **   ~~~   ** Node named NODE 41 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.498234E-003,1.426397E-003,1.498234E-003,1.426397E-003,1.498234E-003,1.426397E-003,1.498234E-003,1.426397E-003,1.498234E-003,1.426397E-003,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.770860
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.770860,2.004575,1.770860,2.004575,1.770860,2.004575,1.770860,2.004575,1.770860,2.004575,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 26.154303
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 26.154303,25.577853,26.154303,25.577853,26.154303,25.577853,26.154303,25.577853,26.154303,25.577853,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:30 - 14:38
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.102821,0.101197,9.941808E-002,9.784491E-002,9.612820E-002,0.000000,9.460447E-002,9.294743E-002,9.147166E-002,0.205157,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.102821,0.101197,9.941808E-002,9.784491E-002,9.612820E-002,9.612820E-002,9.460447E-002,9.294743E-002,9.147166E-002,0.205157,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.254753,0.250506,0.246330,0.242224,0.000000,0.238186,0.234216,0.230312,0.487731,0.505909,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 2191.417755,2156.803009,2118.895246,2085.366344,2048.778253,0.000000,2016.302963,1980.986430,1949.533361,4372.500178,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -2191.417755,2156.803009,-2118.895246,2085.366344,-2510.091684,-2048.778253,2016.302963,-1980.986430,1467.983303,-4372.500178,
+   **   ~~~   ** Node named NODE 30 shows oscillating temperatures across iterations with a repeated value of 27.474912
+   **   ~~~   ** Node named NODE 30 temperature [C] iteration history trace (most recent first): 27.474912,27.474912,27.474912,27.474912,27.474912,27.474912,27.474912,27.474912,27.474912,27.474385,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/07 14:38 - 14:45
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.230213,0.230213,0.230213,0.230213,0.230213,0.000000,0.230213,0.230213,0.230213,0.230213,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.230213,0.230213,0.230213,0.230213,0.230213,0.230213,0.230213,0.230213,0.230213,0.230213,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.567811,0.567811,0.567811,0.567811,0.000000,0.567811,0.567811,0.567811,0.567811,0.567811,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 4906.487295,4906.487295,4906.487295,4906.487295,4906.487295,0.000000,4906.487295,4906.487295,4906.487295,4906.487295,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -4906.495295,4906.495295,-4906.495295,4906.495295,-6048.276821,-4906.495295,4906.495295,-4906.495295,4906.495295,-4906.495295,
+   **   ~~~   ** Node named NODE 41 shows oscillating humidity ratio across iterations with a repeated value of 1.502504E-003
+   **   ~~~   ** Node named NODE 41 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.502504E-003,1.430875E-003,1.502504E-003,1.430875E-003,1.502504E-003,1.430875E-003,1.502504E-003,1.430875E-003,1.502504E-003,1.430875E-003,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.770941
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.770941,2.001154,1.770941,2.001154,1.770941,2.001154,1.770941,2.001154,1.770941,2.001154,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 26.145867
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 26.145867,25.578057,26.145867,25.578057,26.145867,25.578057,26.145867,25.578057,26.145867,25.578057,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/09 08:08 - 08:09
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 1.800360,1.720504,1.658200,4.318162,4.596211,0.000000,2.198327,2.120886,2.025081,1.953026,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 1.800360,1.720504,1.658200,4.318162,4.596211,2.303463,2.198327,2.120886,2.025081,1.953026,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for humidity ratio
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface humidity ratio check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 humidity ratio check value iteration history trace: 2.453313E-004,2.355204E-004,5.326114E-004,5.770003E-004,0.000000,3.131209E-004,3.005998E-004,2.885729E-004,2.770332E-004,2.659495E-004,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.627695,0.602582,1.361948,1.475577,3.552714E-015,0.801141,0.769087,0.738332,0.708792,0.680448,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 38213.761057,36518.764864,35196.325276,91655.688834,97557.440905,0.000000,46660.867949,45017.123671,42983.601899,41454.188820,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 38213.761057,-36518.764864,22683.388062,-91655.688834,122641.800226,48892.449417,-46660.867949,45017.123671,-42983.601899,41454.188820,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.784602
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.784602,1.784602,1.784602,1.784539,1.784539,1.784619,1.784501,1.784540,1.784540,1.784617,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 26.744897
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 26.744897,26.744897,26.744639,26.744739,26.745121,26.744586,26.744643,26.744740,26.745111,26.744592,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/09 08:12 - 08:13
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 1.002285,1.002285,1.002285,1.002285,1.002285,0.000000,1.002285,1.002285,1.002285,1.002285,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 1.002285,1.002285,1.002285,1.002285,1.002285,1.002285,1.002285,1.002285,1.002285,1.002285,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for humidity ratio
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface humidity ratio check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 humidity ratio check value iteration history trace: 1.257218E-004,1.257218E-004,1.257218E-004,1.257218E-004,0.000000,1.257218E-004,1.257218E-004,1.257218E-004,1.257218E-004,1.257218E-004,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.348615,0.348615,0.348615,0.348615,0.000000,0.348615,0.348615,0.348615,0.348615,0.348615,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 21290.059914,21290.059914,21290.059914,21290.059914,21290.059914,0.000000,21290.059914,21290.059914,21290.059914,21290.059914,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -21290.059914,21290.059914,-21290.059914,21290.059914,-26781.916210,-21290.059914,21290.059914,-21290.059914,21290.059914,-21290.059914,
+   **   ~~~   ** Node named NODE 63 shows oscillating humidity ratio across iterations with a repeated value of 2.324514E-003
+   **   ~~~   ** Node named NODE 63 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 2.324514E-003,2.198793E-003,2.324514E-003,2.198793E-003,2.324514E-003,2.198793E-003,2.324514E-003,2.198793E-003,2.324514E-003,2.198793E-003,
+   **   ~~~   ** Node named NODE 63 shows oscillating mass flow rate across iterations with a repeated value of 14.675117
+   **   ~~~   ** Node named NODE 63 mass flow rate [kg/s] iteration history trace (most recent first): 14.675117,15.677402,14.675117,15.677402,14.675117,15.677402,14.675117,15.677402,14.675117,15.677402,
+   **   ~~~   ** Node named NODE 63 shows oscillating temperatures across iterations with a repeated value of 26.592041
+   **   ~~~   ** Node named NODE 63 temperature [C] iteration history trace (most recent first): 26.592041,26.243426,26.592041,26.243426,26.592041,26.243426,26.592041,26.243426,26.592041,26.243426,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.791796
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.791796,1.791796,1.791796,1.791796,1.791796,1.791796,1.791796,1.791770,1.791715,1.791779,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 26.761666
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 26.761666,26.761666,26.761666,26.761666,26.761666,26.761666,26.761666,26.761603,26.761910,26.761624,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/09 13:00 - 13:15
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 2.332603E-002,2.311443E-002,2.291485E-002,4.820114E-002,4.897213E-002,0.000000,2.428176E-002,2.407236E-002,2.385381E-002,2.364801E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 2.332603E-002,2.311443E-002,2.291485E-002,4.820114E-002,4.897213E-002,2.450432E-002,2.428176E-002,2.407236E-002,2.385381E-002,2.364801E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.145719,0.144430,0.295873,0.300857,0.000000,0.153077,0.151722,0.150380,0.149049,0.147730,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 497.293798,492.782618,488.527746,1027.612632,1044.049726,0.000000,517.669128,513.204923,508.545711,504.158187,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 497.293798,-492.782618,347.122984,-1027.612632,1327.070292,522.414125,-517.669128,513.204923,-508.545711,504.158187,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/09 13:00 - 13:08
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,0.000000,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,5.259469E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,3.552714E-015,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.328287,0.328287,0.328287,0.328287,0.000000,0.328287,0.328287,0.328287,0.328287,0.328287,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 1121.217714,1121.217714,1121.217714,1121.217714,1121.217714,0.000000,1121.217714,1121.217714,1121.217714,1121.217714,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 1121.220054,-1121.220054,1121.220054,-1121.220054,1420.069425,1121.220054,-1121.220054,1121.220054,-1121.220054,1121.220054,
+   **   ~~~   ** Node named NODE 30 shows oscillating humidity ratio across iterations with a repeated value of 1.898686E-003
+   **   ~~~   ** Node named NODE 30 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.898686E-003,1.943841E-003,1.898686E-003,1.943841E-003,1.898686E-003,1.943840E-003,1.898686E-003,1.943843E-003,1.898671E-003,1.943559E-003,
+   **   ~~~   ** Node named NODE 30 shows oscillating mass flow rate across iterations with a repeated value of 0.958535
+   **   ~~~   ** Node named NODE 30 mass flow rate [kg/s] iteration history trace (most recent first): 0.958535,0.905940,0.958535,0.905940,0.958535,0.905940,0.958535,0.905941,0.958554,0.905825,
+   **   ~~~   ** Node named NODE 30 shows oscillating temperatures across iterations with a repeated value of 26.870085
+   **   ~~~   ** Node named NODE 30 temperature [C] iteration history trace (most recent first): 26.870085,27.198373,26.870085,27.198373,26.870085,27.198373,26.870086,27.198367,26.869977,27.199136,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/15 09:00 - 09:15
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.229695,0.228950,0.231315,0.232892,0.227893,0.000000,0.224551,0.235161,0.242219,0.465988,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.229695,0.228950,0.231315,0.232892,0.227893,0.227893,0.224551,0.235161,0.242219,0.465988,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.500182,0.498347,0.502903,0.506787,0.000000,0.497144,0.488924,0.509331,1.029982,1.016814,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 4895.477431,4879.584480,4929.990060,4963.610569,4857.070939,0.000000,4785.845112,5011.957777,5162.386827,9931.560898,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -4895.529331,4879.640647,-4930.046227,4963.657685,-5859.121239,-4857.118054,4785.911290,-5012.023955,4265.221150,-9931.580797,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 6.864819E-002,5.966394E-002,5.388819E-002,0.121434,0.124787,0.000000,6.399553E-002,6.500100E-002,6.219163E-002,6.039062E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 6.864819E-002,5.966394E-002,5.388819E-002,0.121434,0.124787,6.242399E-002,6.399553E-002,6.500100E-002,6.219163E-002,6.039062E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.293481,0.257271,0.496996,0.517962,0.000000,0.267155,0.273471,0.278063,0.266759,0.258541,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 1463.095232,1271.614439,1148.516076,2588.123846,2659.576839,0.000000,1363.933324,1385.362759,1325.486817,1287.102058,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 1463.125370,-1271.644576,884.905002,-2588.200663,3187.210781,1330.492586,-1363.986851,1385.406659,-1325.530717,1287.163125,
+   **   ~~~   ** Node named NODE 41 shows oscillating humidity ratio across iterations with a repeated value of 1.373379E-003
+   **   ~~~   ** Node named NODE 41 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.373379E-003,1.324468E-003,1.373379E-003,1.324468E-003,1.373379E-003,1.324468E-003,1.373379E-003,1.324468E-003,1.373379E-003,1.324468E-003,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.778740
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.778740,2.005801,1.778740,2.005801,1.778740,2.005801,1.778740,2.005801,1.778740,2.005801,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 25.583938
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 25.583938,25.088842,25.583938,25.088842,25.583938,25.088842,25.583938,25.088842,25.583938,25.088842,
+   **   ~~~   ** Node named NODE 52 shows oscillating humidity ratio across iterations with a repeated value of 1.239908E-003
+   **   ~~~   ** Node named NODE 52 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.239908E-003,1.273639E-003,1.239908E-003,1.273639E-003,1.239908E-003,1.273639E-003,1.239908E-003,1.273639E-003,1.239908E-003,1.273639E-003,
+   **   ~~~   ** Node named NODE 52 shows oscillating mass flow rate across iterations with a repeated value of 1.049251
+   **   ~~~   ** Node named NODE 52 mass flow rate [kg/s] iteration history trace (most recent first): 1.049251,0.983026,1.049251,0.983026,1.049251,0.983026,1.049251,0.983026,1.049251,0.983026,
+   **   ~~~   ** Node named NODE 52 shows oscillating temperatures across iterations with a repeated value of 25.402857
+   **   ~~~   ** Node named NODE 52 temperature [C] iteration history trace (most recent first): 25.402857,25.685256,25.402857,25.685256,25.402857,25.685256,25.402857,25.685256,25.402857,25.685256,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/15 09:00 - 09:05
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.223706,0.223706,0.223706,0.223706,0.223706,0.000000,0.223706,0.223706,0.223706,0.223706,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.223706,0.223706,0.223706,0.223706,0.223706,0.223706,0.223706,0.223706,0.223706,0.223706,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 3.552714E-015,3.552714E-015,3.552714E-015,3.552714E-015,3.552714E-015,0.000000,3.552714E-015,3.552714E-015,3.552714E-015,3.552714E-015,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.486907,0.486907,0.486907,0.486907,0.000000,0.486907,0.486907,0.486907,0.486907,0.486907,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 4767.814254,4767.814254,4767.814254,4767.814254,4767.814254,0.000000,4767.814254,4767.814254,4767.814254,4767.814254,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -4767.863511,4767.863511,-4767.863511,4767.863511,-5747.679580,-4767.863511,4767.863511,-4767.863511,4767.863511,-4767.863511,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,0.000000,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,5.950712E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.254614,0.254614,0.254614,0.254614,0.000000,0.254614,0.254614,0.254614,0.254614,0.254614,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 1268.270824,1268.270824,1268.270824,1268.270824,1268.270824,0.000000,1268.270824,1268.270824,1268.270824,1268.270824,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 1268.315363,-1268.315363,1268.315363,-1268.315363,1519.667610,1268.315363,-1268.315363,1268.315363,-1268.315363,1268.315363,
+   **   ~~~   ** Node named NODE 41 shows oscillating humidity ratio across iterations with a repeated value of 1.345899E-003
+   **   ~~~   ** Node named NODE 41 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.345899E-003,1.301210E-003,1.345899E-003,1.301210E-003,1.345899E-003,1.301210E-003,1.345899E-003,1.301210E-003,1.345899E-003,1.301210E-003,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.778922
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.778922,2.002628,1.778922,2.002628,1.778922,2.002628,1.778922,2.002628,1.778922,2.002628,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 25.569171
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 25.569171,25.082264,25.569171,25.082264,25.569171,25.082264,25.569171,25.082264,25.569171,25.082264,
+   **   ~~~   ** Node named NODE 52 shows oscillating humidity ratio across iterations with a repeated value of 1.224650E-003
+   **   ~~~   ** Node named NODE 52 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.224650E-003,1.252677E-003,1.224650E-003,1.252677E-003,1.224650E-003,1.252677E-003,1.224650E-003,1.252677E-003,1.224650E-003,1.252677E-003,
+   **   ~~~   ** Node named NODE 52 shows oscillating mass flow rate across iterations with a repeated value of 1.041937
+   **   ~~~   ** Node named NODE 52 mass flow rate [kg/s] iteration history trace (most recent first): 1.041937,0.982430,1.041937,0.982430,1.041937,0.982430,1.041937,0.982430,1.041937,0.982430,
+   **   ~~~   ** Node named NODE 52 shows oscillating temperatures across iterations with a repeated value of 25.414470
+   **   ~~~   ** Node named NODE 52 temperature [C] iteration history trace (most recent first): 25.414470,25.669084,25.414470,25.669084,25.414470,25.669084,25.414470,25.669084,25.414470,25.669084,
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/15 09:05 - 09:10
+   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 0.223289,0.222653,0.224657,0.225997,0.221771,0.000000,0.218938,0.227883,0.233856,0.452146,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 0.223289,0.222653,0.224657,0.225997,0.221771,0.221771,0.218938,0.227883,0.233856,0.452146,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,3.552714E-015,3.552714E-015,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.486202,0.484644,0.488516,0.491806,0.000000,0.483629,0.476681,0.493949,0.997369,0.986239,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 4758.893340,4745.358388,4788.055064,4816.626655,4726.560565,0.000000,4666.172854,4856.821396,4984.122176,9636.473728,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: -4758.943568,4745.412143,-4788.108819,4816.672946,-5698.444353,-4726.606856,4666.234842,-4856.883384,4112.484583,-9636.496262,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for mass flow rate
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface mass flow rate check value iteration history trace: 6.514330E-002,5.622953E-002,5.048343E-002,0.114503,0.117831,0.000000,6.051499E-002,6.152359E-002,5.872096E-002,5.691931E-002,
+   **   ~~~   ** Supply-to-demand interface deck 1 mass flow rate check value iteration history trace: 6.514330E-002,5.622953E-002,5.048343E-002,0.114503,0.117831,5.894291E-002,6.051499E-002,6.152359E-002,5.872096E-002,5.691931E-002,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for temperature
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface temperature check value iteration history trace: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,
+   **   ~~~   ** Supply-to-demand interface deck 1 temperature check value iteration history trace: 0.278479,0.242437,0.467551,0.488374,0.000000,0.252240,0.258579,0.263169,0.251856,0.243663,
+   **   ~~~   ** Air System Named = AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER did not converge for energy
+   **   ~~~   ** Check values should be zero. Most Recent values listed first.
+   **   ~~~   ** Demand-to-Supply interface energy check value iteration history trace: 1388.383255,1198.406432,1075.941147,2440.372186,2511.302666,0.000000,1289.741350,1311.237292,1251.505575,1213.107377,
+   **   ~~~   ** Supply-to-demand interface deck 1 energy check value iteration history trace: 1388.410174,-1198.433351,827.089416,-2440.444289,3009.382241,1256.285286,-1289.790666,1311.277340,-1251.545623,1213.163907,
+   **   ~~~   ** Node named NODE 41 shows oscillating humidity ratio across iterations with a repeated value of 1.359579E-003
+   **   ~~~   ** Node named NODE 41 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.359579E-003,1.313532E-003,1.359579E-003,1.313532E-003,1.359579E-003,1.313532E-003,1.359579E-003,1.313532E-003,1.359579E-003,1.313532E-003,
+   **   ~~~   ** Node named NODE 41 shows oscillating mass flow rate across iterations with a repeated value of 1.778716
+   **   ~~~   ** Node named NODE 41 mass flow rate [kg/s] iteration history trace (most recent first): 1.778716,1.999782,1.778716,1.999782,1.778716,1.999782,1.778716,1.999782,1.778716,1.999782,
+   **   ~~~   ** Node named NODE 41 shows oscillating temperatures across iterations with a repeated value of 25.569518
+   **   ~~~   ** Node named NODE 41 temperature [C] iteration history trace (most recent first): 25.569518,25.087622,25.569518,25.087622,25.569518,25.087622,25.569518,25.087622,25.569518,25.087622,
+   **   ~~~   ** Node named NODE 52 shows oscillating humidity ratio across iterations with a repeated value of 1.229367E-003
+   **   ~~~   ** Node named NODE 52 humidity ratio [kg-water/kg-dryair] iteration history trace (most recent first): 1.229367E-003,1.259888E-003,1.229367E-003,1.259888E-003,1.229367E-003,1.259888E-003,1.229367E-003,1.259888E-003,1.229367E-003,1.259888E-003,
+   **   ~~~   ** Node named NODE 52 shows oscillating mass flow rate across iterations with a repeated value of 1.045540
+   **   ~~~   ** Node named NODE 52 mass flow rate [kg/s] iteration history trace (most recent first): 1.045540,0.982814,1.045540,0.982814,1.045540,0.982814,1.045540,0.982814,1.045540,0.982814,
+   **   ~~~   ** Node named NODE 52 shows oscillating temperatures across iterations with a repeated value of 25.401490
+   **   ~~~   ** Node named NODE 52 temperature [C] iteration history trace (most recent first): 25.401490,25.668948,25.401490,25.668948,25.401490,25.668948,25.401490,25.668948,25.401490,25.668948,
+   ** Warning ** Temperature out of range [-100. to 200.] (PsyTwbFnTdbWPb)
+   **   ~~~   **  Routine=CalcMultiSpeedDXCoilCooling, Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   **  Input Temperature=-180.43
+   ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   **   ~~~   **  Routine=CalcMultiSpeedDXCoilCooling, Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   **  Input Temperature=-180.43
+   **   ~~~   **  Resultant Temperature= -147.23
+   ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005] Current value is 1.532E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Enthalpy out of range (PsyTsatFnHPb)
+   **   ~~~   **  Routine=Unknown, Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   **  Enthalpy=-157891.23565 Pressure= 98725.00
+   **   ~~~   **  Initial Resultant Temperature= -59.98
+   ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005] Current value is 6.823E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005] Current value is 8.194E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:30 - 00:45
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005] Current value is 1.548E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.577E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.577E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb) 
+   **   ~~~   **  Routine=CalcMultiSpeedDXCoilHeating:Averageload, Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   **  Dry-Bulb= -153.39 Humidity Ratio= 1.248E-002 Calculated Relative Humidity [%]= 114320910.91
+   **   ~~~   ** Relative Humidity being reset to 100.0%
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 7.202E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 7.202E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 8.581E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 8.581E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.594E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.594E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.393E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 5.732E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 7.001E-006 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1.
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/01 00:31 - 00:32
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005] Current value is 1.370E-005 m3/s/W
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Severe  ** PsyRhoAirFnPbTdbW: RhoAir (Density of Air) is calculated <= 0 [-384.79728].
+   **   ~~~   ** pb =[98725.00], tdb=[-274.04], w=[0.0000000].
+   **   ~~~   **  Routine=CalcMultiSpeedDXCoilHeating, Environment=RUN PERIOD 1, at Simulation time=07/01 00:34 - 00:35
+   **  Fatal  ** Program terminates due to preceding condition.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=1
+   ..... Last severe error=PsyRhoAirFnPbTdbW: RhoAir (Density of Air) is calculated <= 0 [-384.79728].
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_EAST PERIMETER 1":  Average air volume flow rate is <50% or >130% warning continues. Air flow rate ratio statistics follow.
+   *************  **   ~~~   **   This error occurred 4250 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=3.406996  Min=1.164840E-003
+   *************
+   *************  ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_SOUTH PERIMETER 1":  Average air volume flow rate is <50% or >130% warning continues. Air flow rate ratio statistics follow.
+   *************  **   ~~~   **   This error occurred 4574 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2.861337  Min=4.791489E-003
+   *************
+   *************  ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_WEST PERIMETER 1":  Average air volume flow rate is <50% or >130% warning continues. Air flow rate ratio statistics follow.
+   *************  **   ~~~   **   This error occurred 4853 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4.079531  Min=1.402244E-003
+   *************
+   *************  ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_NORTH PERIMETER 1":  Average air volume flow rate is <50% or >130% warning continues. Air flow rate ratio statistics follow.
+   *************  **   ~~~   **   This error occurred 5216 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2.651888  Min=1.663686E-003
+   *************
+   *************  ** Warning ** HeatExchanger:AirToAir:SensibleAndLatent "AIRLOOP TSPR BLOCKS-1217_EDUCATION_1_CORE 1":  Average air volume flow rate is <50% or >130% warning continues. Air flow rate ratio statistics follow.
+   *************  **   ~~~   **   This error occurred 5324 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2.19669  Min=2.065597E-003
+   *************
+   *************  ** Warning ** SimHVAC: Exceeding Maximum iterations for all HVAC loops, during RUN PERIOD 1 continues
+   *************  **   ~~~   **   This error occurred 60 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************
+   *************  ** Warning ** Temperature out of range [-100. to 200.] (PsyTwbFnTdbWPb)
+   *************  **   ~~~   **   This error occurred 30 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-172.015381 C  Min=-274.043701 C
+   *************
+   *************  ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   *************  **   ~~~   **   This error occurred 197 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-139.580032 C  Min=-301.448059 C
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 4 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.532370E-005  Min=1.532370E-005
+   *************
+   *************  ** Warning ** Enthalpy out of range (PsyTsatFnHPb)
+   *************  **   ~~~   **   This error occurred 48 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-154962.462384 J/kg  Min=-206402.612224 J/kg
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 4 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=6.823115E-006  Min=6.823115E-006
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 4 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=8.193521E-006  Min=8.193521E-006
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:MultiSpeed "COIL COOLING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total cooling capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 4 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.548418E-005  Min=1.548418E-005
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 60 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.577030E-005  Min=6.874616E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2 error continues...
+   *************  **   ~~~   **   This error occurred 60 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.577030E-005  Min=6.874616E-006
+   *************
+   *************  ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb)
+   *************  **   ~~~   **   This error occurred 264 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=114593667.296948 %  Min=93367.303995 %
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=7.201604E-006  Min=1.418165E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=7.201604E-006  Min=1.418165E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=8.581367E-006  Min=2.461636E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=8.581367E-006  Min=2.461636E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 1 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.593965E-005  Min=7.813388E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range at speed 2 error continues...
+   *************  **   ~~~   **   This error occurred 54 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.593965E-005  Min=7.813388E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 3" - Air volume flow rate per watt of rated total heating capacity is out of range error continues at speed 1...
+   *************  **   ~~~   **   This error occurred 12 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.393307E-005  Min=6.874616E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 2" - Air volume flow rate per watt of rated total heating capacity is out of range error continues at speed 1...
+   *************  **   ~~~   **   This error occurred 10 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=5.732095E-006  Min=1.418165E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 4" - Air volume flow rate per watt of rated total heating capacity is out of range error continues at speed 1...
+   *************  **   ~~~   **   This error occurred 10 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=7.001312E-006  Min=2.461636E-006
+   *************
+   *************  ** Warning ** Coil:Heating:DX:MultiSpeed "COIL HEATING DX MULTI SPEED 1" - Air volume flow rate per watt of rated total heating capacity is out of range error continues at speed 1...
+   *************  **   ~~~   **   This error occurred 10 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.370455E-005  Min=7.813388E-006
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 3 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 25365 Warning; 1 Severe Errors; Elapsed Time=00hr 00min 21.48sec
