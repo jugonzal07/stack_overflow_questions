@@ -1,6 +1,6 @@
 # Duplicate name error for F-Factor Floor
 Based on question found here:
-[Duplicate name error for F-Factor Floor question on unmet hours]()
+[Duplicate name error for F-Factor Floor question on unmet hours](https://unmethours.com/question/42548/duplicate-name-error-for-f-factor-floor/)
 
 Gist of it is that the in.idf in this directory has an error where it does not like a duplicated Construction:FfactorGroundFloor:
 
