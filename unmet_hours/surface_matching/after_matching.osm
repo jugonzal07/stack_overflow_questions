@@ -165,7 +165,7 @@ OS:Schedule:Day,
 OS:Construction,
   {a81150e3-aac5-4b20-bcd4-279d9e297cb4}, !- Handle
   INT-FLOOR-TOPSIDE,                      !- Name
-  ,                                       !- Surface Rendering Name
+  {2b664b86-23d1-4dbc-a223-009ee06366c2}, !- Surface Rendering Name
   {625893b7-d94e-4cc4-96b1-554ee53bcde3}, !- Layer 1
   {8ea4e5de-0079-460f-9236-43b3fb3d9c83}, !- Layer 2
   {71482f2c-3097-4452-8195-5dd7ec6d155d}; !- Layer 3
@@ -215,7 +215,7 @@ OS:StandardsInformation:Construction,
 OS:Construction,
   {95354fb6-5082-4377-be13-949aee79bfd0}, !- Handle
   INT-FLOOR-UNDERSIDE,                    !- Name
-  ,                                       !- Surface Rendering Name
+  {520502ce-0916-4762-90e5-693d3a08f99d}, !- Surface Rendering Name
   {71482f2c-3097-4452-8195-5dd7ec6d155d}, !- Layer 1
   {8ea4e5de-0079-460f-9236-43b3fb3d9c83}, !- Layer 2
   {625893b7-d94e-4cc4-96b1-554ee53bcde3}; !- Layer 3
@@ -232,7 +232,7 @@ OS:StandardsInformation:Construction,
 OS:Construction,
   {edb5c602-5d69-428e-a42f-15f2e51b02e6}, !- Handle
   Standard_Int-Wall,                      !- Name
-  ,                                       !- Surface Rendering Name
+  {df7bee46-5ec0-488e-817a-6474b9282a3e}, !- Surface Rendering Name
   {625893b7-d94e-4cc4-96b1-554ee53bcde3}, !- Layer 1
   {625893b7-d94e-4cc4-96b1-554ee53bcde3}; !- Layer 2
 
@@ -274,7 +274,14 @@ OS:Building,
   ,                                       !- Nominal Floor to Floor Height {m}
   ,                                       !- Space Type Name
   {d72e4e96-d452-4cbb-819a-7c0a508c12b2}, !- Default Construction Set Name
-  ;                                       !- Default Schedule Set Name
+  ,                                       !- Default Schedule Set Name
+  ,                                       !- Standards Number of Stories
+  ,                                       !- Standards Number of Above Ground Stories
+  ,                                       !- Standards Template
+  ,                                       !- Standards Building Type
+  ,                                       !- Standards Number of Living Units
+  ,                                       !- Relocatable
+  ;                                       !- Nominal Floor to Ceiling Height {m}
 
 OS:Schedule:Ruleset,
   {e4dbcac5-e1ab-4f50-8551-0c8d253e4260}, !- Handle
@@ -1127,7 +1134,7 @@ OS:Schedule:Day,
 OS:Construction,
   {31fdd2ab-a576-434d-a372-d36d7ea21d55}, !- Handle
   Siding_Steel_Frame_Wall,                !- Name
-  ,                                       !- Surface Rendering Name
+  {ce746300-a726-478b-be16-ba41e09e6e8d}, !- Surface Rendering Name
   {27ad906c-c1a9-464d-b5d2-c4145b539948}, !- Layer 1
   {840102b7-25ad-4e6a-a3b6-7db57f9bc8e4}, !- Layer 2
   {625893b7-d94e-4cc4-96b1-554ee53bcde3}; !- Layer 3
@@ -1169,7 +1176,7 @@ OS:StandardsInformation:Construction,
 OS:Construction,
   {7b6e45a9-8e9a-4a97-a080-f8ca487d0593}, !- Handle
   IEAD_Metal_Deck,                        !- Name
-  ,                                       !- Surface Rendering Name
+  {ba40387b-62be-4c34-b353-d7a7976f9537}, !- Surface Rendering Name
   {6c517ba4-bc66-46c4-920c-26ec9c4b83f9}, !- Layer 1
   {9bfb72a5-e052-4ca1-9ccc-61e408420aa9}, !- Layer 2
   {18854aae-948c-44cd-a7af-33ead9129f2e}; !- Layer 3
@@ -1224,7 +1231,8 @@ OS:Construction:FfactorGroundFloor,
   Construction Ffactor Ground Floor 1,    !- Name
   0.93474,                                !- F-Factor {W/m-K}
   1,                                      !- Area {m2}
-  1;                                      !- PerimeterExposed {m}
+  1,                                      !- PerimeterExposed {m}
+  {5a2f1ba9-262f-45ac-9704-6f6a77717602}; !- Surface Rendering Name
 
 OS:WindowMaterial:SimpleGlazingSystem,
   {02d56fa9-985e-471d-9cc1-e7866c0483a4}, !- Handle
@@ -1236,7 +1244,7 @@ OS:WindowMaterial:SimpleGlazingSystem,
 OS:Construction,
   {9f6e1baf-e3c0-40e0-954a-3fe26a45c678}, !- Handle
   fenestration_1.7034789676901698_0.4171_0.7, !- Name
-  ,                                       !- Surface Rendering Name
+  {75b00579-67ed-4ad5-bb50-b8fc4f0525d2}, !- Surface Rendering Name
   {02d56fa9-985e-471d-9cc1-e7866c0483a4}; !- Layer 1
 
 OS:WindowMaterial:SimpleGlazingSystem,
@@ -1249,7 +1257,7 @@ OS:WindowMaterial:SimpleGlazingSystem,
 OS:Construction,
   {c09fd1e1-fc44-45dc-82e7-bb741e231696}, !- Handle
   fenestration_1.7034789676901698_0.51_0.7, !- Name
-  ,                                       !- Surface Rendering Name
+  {989be4e8-67ab-4e72-a662-9b450d587f6d}, !- Surface Rendering Name
   {c65ad6e8-c65a-477e-93fd-6dd69b4409a2}; !- Layer 1
 
 OS:BuildingStory,
@@ -1259,7 +1267,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {a9ea1548-6d33-4a04-b38b-41b224d9b592}; !- Group Rendering Name
 
 OS:Space,
   {cce74da2-4330-4628-90f6-7aead8859070}, !- Handle
@@ -1402,10 +1410,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -12.192, -27.432, 0,                    !- X,Y,Z Vertex 1 {m}
-  -12.192, 15.24, 0,                      !- X,Y,Z Vertex 2 {m}
-  -7.62, 10.668, 0,                       !- X,Y,Z Vertex 3 {m}
-  -7.62, -22.86, 0;                       !- X,Y,Z Vertex 4 {m}
+  -12.192, 15.24, 0,                      !- X,Y,Z Vertex 1 {m}
+  -7.62, 10.668, 0,                       !- X,Y,Z Vertex 2 {m}
+  -7.62, -22.86, 0,                       !- X,Y,Z Vertex 3 {m}
+  -12.192, -27.432, 0;                    !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {0903b5fd-ff92-4b5f-9f35-cddc820f5c98}, !- Handle
@@ -1511,9 +1519,10 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {fb480dc9-0480-4b34-b606-3bb51c446002}, !- Group Rendering Name
   ,                                       !- Thermostat Name
-  No;                                     !- Use Ideal Air Loads
+  No,                                     !- Use Ideal Air Loads
+  ;                                       !- Humidistat Name
 
 OS:Node,
   {c4ec252a-7c23-4f7d-8e95-72dcfcf957d8}, !- Handle
@@ -1604,10 +1613,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -12.192, 15.24, 0,                      !- X,Y,Z Vertex 1 {m}
-  12.192, 15.24, 0,                       !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 0,                        !- X,Y,Z Vertex 3 {m}
-  -7.62, 10.668, 0;                       !- X,Y,Z Vertex 4 {m}
+  12.192, 15.24, 0,                       !- X,Y,Z Vertex 1 {m}
+  7.62, 10.668, 0,                        !- X,Y,Z Vertex 2 {m}
+  -7.62, 10.668, 0,                       !- X,Y,Z Vertex 3 {m}
+  -12.192, 15.24, 0;                      !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {3ff55cab-9d10-4781-8da3-5bd09831b7df}, !- Handle
@@ -1713,7 +1722,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {04aaf411-de57-4381-9e2c-1715b12d3d78}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -1915,7 +1924,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {93ea9bb6-8822-4e6e-8b90-a3d4b1da22bb}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -2008,10 +2017,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  12.192, -27.432, 0,                     !- X,Y,Z Vertex 1 {m}
-  -12.192, -27.432, 0,                    !- X,Y,Z Vertex 2 {m}
-  -7.62, -22.86, 0,                       !- X,Y,Z Vertex 3 {m}
-  7.62, -22.86, 0;                        !- X,Y,Z Vertex 4 {m}
+  7.62, -22.86, 0,                        !- X,Y,Z Vertex 1 {m}
+  12.192, -27.432, 0,                     !- X,Y,Z Vertex 2 {m}
+  -12.192, -27.432, 0,                    !- X,Y,Z Vertex 3 {m}
+  -7.62, -22.86, 0;                       !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {9871946a-61f4-45e0-b143-b0f57011320e}, !- Handle
@@ -2117,7 +2126,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {427c2a56-c736-4e1e-9c08-725b7b05e103}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -2210,10 +2219,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, -22.86, 0,                       !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 0,                       !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 0,                        !- X,Y,Z Vertex 3 {m}
-  7.62, -22.86, 0;                        !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 0,                        !- X,Y,Z Vertex 1 {m}
+  7.62, -22.86, 0,                        !- X,Y,Z Vertex 2 {m}
+  -7.62, -22.86, 0,                       !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 0;                       !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {fa1ca9ad-e8e2-4ea4-969b-a8218c3b564f}, !- Handle
@@ -2319,7 +2328,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {dc45c7ac-a714-4ed5-a530-bc0ea1aac2fb}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -2394,7 +2403,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {c81f3983-0c36-497c-a9a6-4b63dc5e3692}; !- Group Rendering Name
 
 OS:Space,
   {0e77ef2e-8b30-427c-aa83-729313e25e2a}, !- Handle
@@ -2408,7 +2417,9 @@ OS:Space,
   0,                                      !- Z Origin {m}
   {d76b77f1-3e30-4c6a-a108-ba6746b2e86c}, !- Building Story Name
   ,                                       !- Thermal Zone Name
-  No;                                     !- Part of Total Floor Area
+  No,                                     !- Part of Total Floor Area
+  ,                                       !- Design Specification Outdoor Air Object Name
+  ;                                       !- Building Unit Name
 
 OS:Surface,
   {08c57f6b-37b6-4222-92e5-211cd44c6d4f}, !- Handle
@@ -2646,7 +2657,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {c08c60ad-cb66-4a47-9874-2241f64ec5cf}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -2848,7 +2859,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {55f15928-f71f-481f-8abc-6fa7604bab1b}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -3050,7 +3061,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {61b41bbd-0c63-4aa0-9849-8f646577e52a}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -3252,7 +3263,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {483e5aec-e119-46a1-9c83-93ddb13058bb}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -3345,10 +3356,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, -22.86, 3.6576,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 3.6576,                  !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 3.6576,                   !- X,Y,Z Vertex 3 {m}
-  7.62, -22.86, 3.6576;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 3.6576,                   !- X,Y,Z Vertex 1 {m}
+  7.62, -22.86, 3.6576,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, -22.86, 3.6576,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 3.6576;                  !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {e4f5f4b6-f3d6-4f80-b5ba-4ed0176c79b2}, !- Handle
@@ -3454,7 +3465,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {153c6224-a7ea-47af-bd65-d77e69f10eec}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -3733,7 +3744,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {7a6433e1-ae5e-4674-ad0c-23dddd349dac}; !- Group Rendering Name
 
 OS:Space,
   {eeeeb8c2-3ebd-48c1-95a9-52b0f7eeeb27}, !- Handle
@@ -3985,9 +3996,10 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {be7503ef-bc1f-4167-ba2d-bc6c1f5a4e87}, !- Group Rendering Name
   ,                                       !- Thermostat Name
-  No;                                     !- Use Ideal Air Loads
+  No,                                     !- Use Ideal Air Loads
+  ;                                       !- Humidistat Name
 
 OS:Node,
   {47e7ab69-baf6-4a06-9a63-a31e102b2106}, !- Handle
@@ -4078,10 +4090,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -12.192, 15.24, 7.3152,                 !- X,Y,Z Vertex 1 {m}
-  12.192, 15.24, 7.3152,                  !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 7.3152,                   !- X,Y,Z Vertex 3 {m}
-  -7.62, 10.668, 7.3152;                  !- X,Y,Z Vertex 4 {m}
+  12.192, 15.24, 7.3152,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 10.668, 7.3152,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 10.668, 7.3152,                  !- X,Y,Z Vertex 3 {m}
+  -12.192, 15.24, 7.3152;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {bf10fdd9-972c-4837-af4a-f58392e3aefa}, !- Handle
@@ -4187,7 +4199,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {28d271a0-a9ac-4ceb-84ae-d2fe515473c5}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -4389,7 +4401,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {9e5b0335-bd3f-4d3c-ac02-2c0b86a7124e}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -4591,7 +4603,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {cec792c6-0f86-4e17-af56-3ff5c1e84fd7}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -4793,7 +4805,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {77fa9f2a-96a6-46d9-bec0-0f9ace3fc9b4}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -4868,7 +4880,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {a06d2bcf-7555-405f-ae48-2ceb0a4ffc61}; !- Group Rendering Name
 
 OS:Space,
   {17166e38-5ede-486d-a9d5-8588b15d4445}, !- Handle
@@ -5120,7 +5132,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {4269273e-a6d7-4a9c-89e3-bf045f9a6b1c}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -5322,7 +5334,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {0a8f9dcb-7768-4f1d-afbb-26ef2d8ea77e}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -5524,7 +5536,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {66297fd3-0f5b-4b93-abe1-b44060f7bbfb}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -5726,7 +5738,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {30843ccd-a371-4c07-897c-1ed23fae3db8}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -5819,10 +5831,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 10.9728,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 10.9728,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 10.9728,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 10.9728;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 10.9728,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 10.9728,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 10.9728,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 10.9728;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {736d462b-bf49-4202-bf4f-a839d0081f5e}, !- Handle
@@ -5928,7 +5940,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {cc682de3-7435-4d95-818f-40de898eeab4}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -6003,7 +6015,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {330d0c92-4b5d-4093-92ea-2ce58b4c8f0d}; !- Group Rendering Name
 
 OS:Space,
   {bf307304-62e0-474c-a64a-2e62de947a31}, !- Handle
@@ -6255,7 +6267,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {4d865b74-c834-4c9b-b5de-a3676689f591}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -6457,7 +6469,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {6a5f9ebc-7fd6-4e09-9b00-69d44d14115f}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -6659,7 +6671,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {1f8f41fa-b5fd-4552-bd10-81ac8e811b74}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -6861,7 +6873,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {9eaf929d-744e-4640-8651-7665b44eafd7}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -6954,10 +6966,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 14.6304,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 14.6304,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 14.6304,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 14.6304;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 14.6304,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 14.6304,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 14.6304,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 14.6304;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {e7cb728d-d4ee-4c6d-84b5-56981bd09068}, !- Handle
@@ -7063,7 +7075,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {0cf25924-2e1a-448a-9182-de42e97a955d}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -7138,7 +7150,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {713b4d89-0c09-4944-958e-2347e0011990}; !- Group Rendering Name
 
 OS:Space,
   {8d375d27-24c8-429d-bc45-cc3176c6acbb}, !- Handle
@@ -7390,7 +7402,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {24e3edcf-34ea-4c55-bb46-d3a379c5ab00}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -7592,7 +7604,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {fdd00a44-1743-4fed-bf85-96a01fe61e81}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -7794,7 +7806,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {366d5126-f235-4589-91de-87ff6b72169e}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -7996,9 +8008,10 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {523ef40d-0b36-4afc-9333-97719eef576b}, !- Group Rendering Name
   ,                                       !- Thermostat Name
-  No;                                     !- Use Ideal Air Loads
+  No,                                     !- Use Ideal Air Loads
+  ;                                       !- Humidistat Name
 
 OS:Node,
   {6487da50-9d93-480d-80a3-f460886abbc2}, !- Handle
@@ -8089,10 +8102,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 18.288,                   !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 18.288,                  !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 18.288,                   !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 18.288;                    !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 18.288,                   !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 18.288,                    !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 18.288,                   !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 18.288;                  !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {4e022348-5d1a-4b1f-ab6a-a5f78fe48269}, !- Handle
@@ -8198,7 +8211,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {edf35f5c-db43-42df-8e46-9abb294e3ffc}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -8273,7 +8286,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {00856069-0ef5-464a-86b1-2f3e284d4285}; !- Group Rendering Name
 
 OS:Space,
   {20e429cd-00a6-49a7-9e76-109f72aaa94e}, !- Handle
@@ -8525,7 +8538,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {74773046-18c3-4707-ab07-70afe45dc715}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -8727,7 +8740,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {a3d2efac-e721-4345-be66-10308ad20275}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -8929,7 +8942,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {0ee617ea-fa47-4fd9-a973-4da1cbba0c28}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -9131,7 +9144,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {b2ff62ca-54b5-4b2b-a37a-e6b28eb55e8d}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -9224,10 +9237,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 21.9456,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 21.9456,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 21.9456,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 21.9456;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 21.9456,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 21.9456,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 21.9456,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 21.9456;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {65f345c8-9f81-4f71-9e6c-3fb0a191903d}, !- Handle
@@ -9333,7 +9346,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {b59800f9-d6ff-4bce-93bd-5078ad24d9fa}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -9408,7 +9421,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {a908642a-733b-4ac5-b2a3-81466ab374fb}; !- Group Rendering Name
 
 OS:Space,
   {752e5df2-da64-4fce-bcbc-07e099680062}, !- Handle
@@ -9660,7 +9673,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {92dcc771-ac06-4117-aa82-bf0101e85400}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -9862,7 +9875,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {e0433dff-f48e-45e2-88b3-94dc09cd6c88}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -10064,7 +10077,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {c82fd07a-e2e9-416d-bfdf-bac174f22b5c}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -10266,7 +10279,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {5d2bf8bc-d38f-475e-bfa5-2009a6aa2ecb}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -10359,10 +10372,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 25.6032,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 25.6032,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 25.6032,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 25.6032;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 25.6032,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 25.6032,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 25.6032,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 25.6032;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {30f66d03-56b3-41ec-ada5-58ffe3e5e584}, !- Handle
@@ -10468,7 +10481,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {214ba60c-2725-4894-9c32-6c1c694039fa}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -10543,7 +10556,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {4558e9df-86d7-409c-ab12-240fede41948}; !- Group Rendering Name
 
 OS:Space,
   {abc2faf4-8e38-4211-8980-17ab8a7a212b}, !- Handle
@@ -10795,7 +10808,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {216a211b-fa5c-4b21-be17-f03dd262e48d}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -10997,7 +11010,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {09005e4d-4b58-4a18-8f35-331f019aa290}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -11199,7 +11212,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {9a0983aa-f0e7-4ed5-a686-748fcb8b6bd5}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -11278,7 +11291,10 @@ OS:Space,
   0,                                      !- Y Origin {m}
   0,                                      !- Z Origin {m}
   {09792a7a-df12-449f-bf04-33b2580dbc5c}, !- Building Story Name
-  {b43e0e75-a77d-4c6d-b876-a3bd266d5e1c}; !- Thermal Zone Name
+  {b43e0e75-a77d-4c6d-b876-a3bd266d5e1c}, !- Thermal Zone Name
+  ,                                       !- Part of Total Floor Area
+  ,                                       !- Design Specification Outdoor Air Object Name
+  ;                                       !- Building Unit Name
 
 OS:Surface,
   {bc0fc105-38ea-4292-ab5a-7bb5ba99f5db}, !- Handle
@@ -11401,7 +11417,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {c66c1016-6291-4fbb-8758-39c5d4c15cb0}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -11494,10 +11510,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 29.2608,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 29.2608,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 29.2608,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 29.2608;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 29.2608,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 29.2608,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 29.2608,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 29.2608;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {7ce72eb9-f24d-4d2b-bebd-60d53cd55a53}, !- Handle
@@ -11603,7 +11619,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {95583b86-e5ac-4348-9827-5d13a119e76e}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -11678,7 +11694,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {409598cb-2069-4f37-bfcb-5b5e5b5d76f1}; !- Group Rendering Name
 
 OS:Space,
   {910c9fc3-6f19-4da9-875c-72e5bcb052e1}, !- Handle
@@ -11930,7 +11946,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {5f36f333-e2e1-4996-8961-9b228753efbc}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -12132,7 +12148,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {33c10b61-f000-4829-ab96-e24646ab322d}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -12334,7 +12350,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {d9e0cf5d-3466-476c-8a29-5fdb0cd555ae}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -12536,7 +12552,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {19927f4d-e812-40a6-9178-d8acc90e7bba}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -12629,10 +12645,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 32.9184,                  !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 32.9184,                 !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 32.9184,                  !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 32.9184;                   !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 32.9184,                  !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 32.9184,                   !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 32.9184,                  !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 32.9184;                 !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {345be5a5-36e8-4b92-a7e5-131c062413ae}, !- Handle
@@ -12738,7 +12754,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {baf0ede4-d77c-443c-95bc-08a7f17c127b}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -12813,7 +12829,7 @@ OS:BuildingStory,
   3.6576,                                 !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {444c57da-43e7-4674-9dc8-d5bd66e3ee52}; !- Group Rendering Name
 
 OS:Space,
   {b4d24443-13ed-4afa-a7d6-17762018da52}, !- Handle
@@ -13065,7 +13081,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {b1d59aa5-3478-45a9-b345-15a98b6f8e4f}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -13267,7 +13283,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {0b69715d-f4da-411e-b048-8c8b53e7b7a8}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -13469,7 +13485,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {870f1280-023a-4d9c-b0a9-8864c0153635}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -13671,7 +13687,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {e372503f-10dc-46aa-92b7-03ecbd305ca9}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -13764,10 +13780,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7.62, 1.524, 36.576,                   !- X,Y,Z Vertex 1 {m}
-  -7.62, 10.668, 36.576,                  !- X,Y,Z Vertex 2 {m}
-  7.62, 10.668, 36.576,                   !- X,Y,Z Vertex 3 {m}
-  7.62, 1.524, 36.576;                    !- X,Y,Z Vertex 4 {m}
+  7.62, 10.668, 36.576,                   !- X,Y,Z Vertex 1 {m}
+  7.62, 1.524, 36.576,                    !- X,Y,Z Vertex 2 {m}
+  -7.62, 1.524, 36.576,                   !- X,Y,Z Vertex 3 {m}
+  -7.62, 10.668, 36.576;                  !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {953dd60a-35a8-483d-bea9-63509560a785}, !- Handle
@@ -13873,7 +13889,7 @@ OS:ThermalZone,
   ,                                       !- Secondary Daylighting Control Name
   ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
   ,                                       !- Illuminance Map Name
-  ,                                       !- Group Rendering Name
+  {0969ce13-bc8d-4347-978c-f72f9ab197d6}, !- Group Rendering Name
   ,                                       !- Thermostat Name
   No;                                     !- Use Ideal Air Loads
 
@@ -15277,4 +15293,525 @@ OS:Surface,
   12.192, -27.432, 7.3152,                !- X,Y,Z Vertex 1 {m}
   12.192, -3.048, 7.3152,                 !- X,Y,Z Vertex 2 {m}
   8.34189473684211, -3.048, 7.3152;       !- X,Y,Z Vertex 3 {m}
+
+OS:Facility,
+  {adb5c5ab-eaa2-42bc-870c-b22a10fb03ef}; !- Handle
+
+OS:Rendering:Color,
+  {2b664b86-23d1-4dbc-a223-009ee06366c2}, !- Handle
+  Rendering Color 1,                      !- Name
+  139,                                    !- Rendering Red Value
+  69,                                     !- Rendering Green Value
+  19;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {520502ce-0916-4762-90e5-693d3a08f99d}, !- Handle
+  Rendering Color 2,                      !- Name
+  255,                                    !- Rendering Red Value
+  228,                                    !- Rendering Green Value
+  225;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {df7bee46-5ec0-488e-817a-6474b9282a3e}, !- Handle
+  Rendering Color 3,                      !- Name
+  46,                                     !- Rendering Red Value
+  139,                                    !- Rendering Green Value
+  87;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {ce746300-a726-478b-be16-ba41e09e6e8d}, !- Handle
+  Rendering Color 4,                      !- Name
+  253,                                    !- Rendering Red Value
+  245,                                    !- Rendering Green Value
+  230;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {ba40387b-62be-4c34-b353-d7a7976f9537}, !- Handle
+  Rendering Color 5,                      !- Name
+  188,                                    !- Rendering Red Value
+  143,                                    !- Rendering Green Value
+  143;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {5a2f1ba9-262f-45ac-9704-6f6a77717602}, !- Handle
+  Rendering Color 6,                      !- Name
+  128,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  128;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {75b00579-67ed-4ad5-bb50-b8fc4f0525d2}, !- Handle
+  Rendering Color 7,                      !- Name
+  255,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {989be4e8-67ab-4e72-a662-9b450d587f6d}, !- Handle
+  Rendering Color 8,                      !- Name
+  216,                                    !- Rendering Red Value
+  191,                                    !- Rendering Green Value
+  216;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {483e5aec-e119-46a1-9c83-93ddb13058bb}, !- Handle
+  Rendering Color 9,                      !- Name
+  128,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {33c10b61-f000-4829-ab96-e24646ab322d}, !- Handle
+  Rendering Color 10,                     !- Name
+  255,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  240;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {5f36f333-e2e1-4996-8961-9b228753efbc}, !- Handle
+  Rendering Color 11,                     !- Name
+  105,                                    !- Rendering Red Value
+  105,                                    !- Rendering Green Value
+  105;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {0969ce13-bc8d-4347-978c-f72f9ab197d6}, !- Handle
+  Rendering Color 12,                     !- Name
+  250,                                    !- Rendering Red Value
+  235,                                    !- Rendering Green Value
+  215;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {95583b86-e5ac-4348-9827-5d13a119e76e}, !- Handle
+  Rendering Color 13,                     !- Name
+  135,                                    !- Rendering Red Value
+  206,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {c66c1016-6291-4fbb-8758-39c5d4c15cb0}, !- Handle
+  Rendering Color 14,                     !- Name
+  255,                                    !- Rendering Red Value
+  105,                                    !- Rendering Green Value
+  180;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {9a0983aa-f0e7-4ed5-a686-748fcb8b6bd5}, !- Handle
+  Rendering Color 15,                     !- Name
+  255,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {09005e4d-4b58-4a18-8f35-331f019aa290}, !- Handle
+  Rendering Color 16,                     !- Name
+  128,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {216a211b-fa5c-4b21-be17-f03dd262e48d}, !- Handle
+  Rendering Color 17,                     !- Name
+  105,                                    !- Rendering Red Value
+  105,                                    !- Rendering Green Value
+  105;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {e372503f-10dc-46aa-92b7-03ecbd305ca9}, !- Handle
+  Rendering Color 18,                     !- Name
+  139,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  139;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {214ba60c-2725-4894-9c32-6c1c694039fa}, !- Handle
+  Rendering Color 19,                     !- Name
+  138,                                    !- Rendering Red Value
+  43,                                     !- Rendering Green Value
+  226;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {5d2bf8bc-d38f-475e-bfa5-2009a6aa2ecb}, !- Handle
+  Rendering Color 20,                     !- Name
+  250,                                    !- Rendering Red Value
+  235,                                    !- Rendering Green Value
+  215;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {c82fd07a-e2e9-416d-bfdf-bac174f22b5c}, !- Handle
+  Rendering Color 21,                     !- Name
+  139,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {e0433dff-f48e-45e2-88b3-94dc09cd6c88}, !- Handle
+  Rendering Color 22,                     !- Name
+  245,                                    !- Rendering Red Value
+  222,                                    !- Rendering Green Value
+  179;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {92dcc771-ac06-4117-aa82-bf0101e85400}, !- Handle
+  Rendering Color 23,                     !- Name
+  0,                                      !- Rendering Red Value
+  250,                                    !- Rendering Green Value
+  154;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {870f1280-023a-4d9c-b0a9-8864c0153635}, !- Handle
+  Rendering Color 24,                     !- Name
+  245,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b59800f9-d6ff-4bce-93bd-5078ad24d9fa}, !- Handle
+  Rendering Color 25,                     !- Name
+  255,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  224;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {93ea9bb6-8822-4e6e-8b90-a3d4b1da22bb}, !- Handle
+  Rendering Color 26,                     !- Name
+  0,                                      !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  205;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {0ee617ea-fa47-4fd9-a973-4da1cbba0c28}, !- Handle
+  Rendering Color 27,                     !- Name
+  248,                                    !- Rendering Red Value
+  248,                                    !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {a3d2efac-e721-4345-be66-10308ad20275}, !- Handle
+  Rendering Color 28,                     !- Name
+  255,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {74773046-18c3-4707-ab07-70afe45dc715}, !- Handle
+  Rendering Color 29,                     !- Name
+  205,                                    !- Rendering Red Value
+  133,                                    !- Rendering Green Value
+  63;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {0b69715d-f4da-411e-b048-8c8b53e7b7a8}, !- Handle
+  Rendering Color 30,                     !- Name
+  210,                                    !- Rendering Red Value
+  180,                                    !- Rendering Green Value
+  140;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {edf35f5c-db43-42df-8e46-9abb294e3ffc}, !- Handle
+  Rendering Color 31,                     !- Name
+  250,                                    !- Rendering Red Value
+  240,                                    !- Rendering Green Value
+  230;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {523ef40d-0b36-4afc-9333-97719eef576b}, !- Handle
+  Rendering Color 32,                     !- Name
+  0,                                      !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {366d5126-f235-4589-91de-87ff6b72169e}, !- Handle
+  Rendering Color 33,                     !- Name
+  100,                                    !- Rendering Red Value
+  149,                                    !- Rendering Green Value
+  237;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {fdd00a44-1743-4fed-bf85-96a01fe61e81}, !- Handle
+  Rendering Color 34,                     !- Name
+  173,                                    !- Rendering Red Value
+  216,                                    !- Rendering Green Value
+  230;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {24e3edcf-34ea-4c55-bb46-d3a379c5ab00}, !- Handle
+  Rendering Color 35,                     !- Name
+  46,                                     !- Rendering Red Value
+  139,                                    !- Rendering Green Value
+  87;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b1d59aa5-3478-45a9-b345-15a98b6f8e4f}, !- Handle
+  Rendering Color 36,                     !- Name
+  188,                                    !- Rendering Red Value
+  143,                                    !- Rendering Green Value
+  143;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {0cf25924-2e1a-448a-9182-de42e97a955d}, !- Handle
+  Rendering Color 37,                     !- Name
+  139,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {9eaf929d-744e-4640-8651-7665b44eafd7}, !- Handle
+  Rendering Color 38,                     !- Name
+  124,                                    !- Rendering Red Value
+  252,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {1f8f41fa-b5fd-4552-bd10-81ac8e811b74}, !- Handle
+  Rendering Color 39,                     !- Name
+  0,                                      !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  139;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {6a5f9ebc-7fd6-4e09-9b00-69d44d14115f}, !- Handle
+  Rendering Color 40,                     !- Name
+  106,                                    !- Rendering Red Value
+  90,                                     !- Rendering Green Value
+  205;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {4d865b74-c834-4c9b-b5de-a3676689f591}, !- Handle
+  Rendering Color 41,                     !- Name
+  240,                                    !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  128;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {baf0ede4-d77c-443c-95bc-08a7f17c127b}, !- Handle
+  Rendering Color 42,                     !- Name
+  199,                                    !- Rendering Red Value
+  21,                                     !- Rendering Green Value
+  133;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {cc682de3-7435-4d95-818f-40de898eeab4}, !- Handle
+  Rendering Color 43,                     !- Name
+  218,                                    !- Rendering Red Value
+  112,                                    !- Rendering Green Value
+  214;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {30843ccd-a371-4c07-897c-1ed23fae3db8}, !- Handle
+  Rendering Color 44,                     !- Name
+  255,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  224;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {66297fd3-0f5b-4b93-abe1-b44060f7bbfb}, !- Handle
+  Rendering Color 45,                     !- Name
+  219,                                    !- Rendering Red Value
+  112,                                    !- Rendering Green Value
+  147;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {0a8f9dcb-7768-4f1d-afbb-26ef2d8ea77e}, !- Handle
+  Rendering Color 46,                     !- Name
+  128,                                    !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {4269273e-a6d7-4a9c-89e3-bf045f9a6b1c}, !- Handle
+  Rendering Color 47,                     !- Name
+  70,                                     !- Rendering Red Value
+  130,                                    !- Rendering Green Value
+  180;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {19927f4d-e812-40a6-9178-d8acc90e7bba}, !- Handle
+  Rendering Color 48,                     !- Name
+  128,                                    !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {77fa9f2a-96a6-46d9-bec0-0f9ace3fc9b4}, !- Handle
+  Rendering Color 49,                     !- Name
+  222,                                    !- Rendering Red Value
+  184,                                    !- Rendering Green Value
+  135;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {cec792c6-0f86-4e17-af56-3ff5c1e84fd7}, !- Handle
+  Rendering Color 50,                     !- Name
+  255,                                    !- Rendering Red Value
+  192,                                    !- Rendering Green Value
+  203;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {9e5b0335-bd3f-4d3c-ac02-2c0b86a7124e}, !- Handle
+  Rendering Color 51,                     !- Name
+  255,                                    !- Rendering Red Value
+  248,                                    !- Rendering Green Value
+  220;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {28d271a0-a9ac-4ceb-84ae-d2fe515473c5}, !- Handle
+  Rendering Color 52,                     !- Name
+  135,                                    !- Rendering Red Value
+  206,                                    !- Rendering Green Value
+  235;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {be7503ef-bc1f-4167-ba2d-bc6c1f5a4e87}, !- Handle
+  Rendering Color 53,                     !- Name
+  0,                                      !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {fb480dc9-0480-4b34-b606-3bb51c446002}, !- Handle
+  Rendering Color 54,                     !- Name
+  255,                                    !- Rendering Red Value
+  182,                                    !- Rendering Green Value
+  193;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {153c6224-a7ea-47af-bd65-d77e69f10eec}, !- Handle
+  Rendering Color 55,                     !- Name
+  128,                                    !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {d9e0cf5d-3466-476c-8a29-5fdb0cd555ae}, !- Handle
+  Rendering Color 56,                     !- Name
+  112,                                    !- Rendering Red Value
+  128,                                    !- Rendering Green Value
+  144;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {61b41bbd-0c63-4aa0-9849-8f646577e52a}, !- Handle
+  Rendering Color 57,                     !- Name
+  0,                                      !- Rendering Red Value
+  100,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {55f15928-f71f-481f-8abc-6fa7604bab1b}, !- Handle
+  Rendering Color 58,                     !- Name
+  245,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {c08c60ad-cb66-4a47-9874-2241f64ec5cf}, !- Handle
+  Rendering Color 59,                     !- Name
+  199,                                    !- Rendering Red Value
+  21,                                     !- Rendering Green Value
+  133;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {04aaf411-de57-4381-9e2c-1715b12d3d78}, !- Handle
+  Rendering Color 60,                     !- Name
+  135,                                    !- Rendering Red Value
+  206,                                    !- Rendering Green Value
+  235;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {dc45c7ac-a714-4ed5-a530-bc0ea1aac2fb}, !- Handle
+  Rendering Color 61,                     !- Name
+  255,                                    !- Rendering Red Value
+  99,                                     !- Rendering Green Value
+  71;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {427c2a56-c736-4e1e-9c08-725b7b05e103}, !- Handle
+  Rendering Color 62,                     !- Name
+  135,                                    !- Rendering Red Value
+  206,                                    !- Rendering Green Value
+  235;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b2ff62ca-54b5-4b2b-a37a-e6b28eb55e8d}, !- Handle
+  Rendering Color 63,                     !- Name
+  75,                                     !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  130;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {c81f3983-0c36-497c-a9a6-4b63dc5e3692}, !- Handle
+  Rendering Color 64,                     !- Name
+  255,                                    !- Rendering Red Value
+  215,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {7a6433e1-ae5e-4674-ad0c-23dddd349dac}, !- Handle
+  Rendering Color 65,                     !- Name
+  154,                                    !- Rendering Red Value
+  205,                                    !- Rendering Green Value
+  50;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {a9ea1548-6d33-4a04-b38b-41b224d9b592}, !- Handle
+  Rendering Color 66,                     !- Name
+  95,                                     !- Rendering Red Value
+  158,                                    !- Rendering Green Value
+  160;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {a06d2bcf-7555-405f-ae48-2ceb0a4ffc61}, !- Handle
+  Rendering Color 67,                     !- Name
+  230,                                    !- Rendering Red Value
+  230,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {330d0c92-4b5d-4093-92ea-2ce58b4c8f0d}, !- Handle
+  Rendering Color 68,                     !- Name
+  123,                                    !- Rendering Red Value
+  104,                                    !- Rendering Green Value
+  238;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {444c57da-43e7-4674-9dc8-d5bd66e3ee52}, !- Handle
+  Rendering Color 69,                     !- Name
+  255,                                    !- Rendering Red Value
+  105,                                    !- Rendering Green Value
+  180;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {713b4d89-0c09-4944-958e-2347e0011990}, !- Handle
+  Rendering Color 70,                     !- Name
+  189,                                    !- Rendering Red Value
+  183,                                    !- Rendering Green Value
+  107;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {00856069-0ef5-464a-86b1-2f3e284d4285}, !- Handle
+  Rendering Color 71,                     !- Name
+  233,                                    !- Rendering Red Value
+  150,                                    !- Rendering Green Value
+  122;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {a908642a-733b-4ac5-b2a3-81466ab374fb}, !- Handle
+  Rendering Color 72,                     !- Name
+  255,                                    !- Rendering Red Value
+  165,                                    !- Rendering Green Value
+  0;                                      !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {4558e9df-86d7-409c-ab12-240fede41948}, !- Handle
+  Rendering Color 73,                     !- Name
+  173,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  47;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {409598cb-2069-4f37-bfcb-5b5e5b5d76f1}, !- Handle
+  Rendering Color 74,                     !- Name
+  100,                                    !- Rendering Red Value
+  149,                                    !- Rendering Green Value
+  237;                                    !- Rendering Blue Value
 
